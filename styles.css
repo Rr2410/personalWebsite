@@ -1,29 +1,70 @@
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #CEEAF7;
+    background-color: white;
+    margin: 50px;
 }
 h1{
     color: crimson;
     font-size: 40px;
+        line-height: 50px;
 }
 p{
     color: #000;
     font-size: 20px;
+    line-height: 45px;
+}
+a{
+    text-decoration: none;
+    color: crimson;
+
 }
 .right{
     width: 40vw;
     height: 50vh; 
-    background-color:#FFE066 ;
+    /* background-color:#FFE066 ; */
     float:right;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(225deg, #ffe066,#ffb7c323);
 
 }
 .left{
     width: 40vw;
     height: 50vh;
-    background-color: #FFB7C3;
+    /* background-color: #FFB7C3; */
     float: left;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(225deg,#ffb7c323,#FFE066);
+    position: relative;
 
 }
+button{
+display: grid;
+grid-auto-flow: column;
+grid-gap: 0.5em;
+border:solid 0.30em;
+border-color: transparent ;
+padding: 1em 1.5em;
+border-radius: 9em;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+}
+#button-edu{
+background: linear-gradient(225deg, #FFE066, #ffb7c323) border-box;
+    
+}
+#button-contact{
+background: linear-gradient(225deg, #FFE066, #ffb7c323) border-box;
+    
+}
+#button-exm{
+background: linear-gradient(225deg, #ffb7c323, #FFE066) border-box;
+    
+}
+/* .center{
+
+} */
 
 
 /* #CEEAF7
