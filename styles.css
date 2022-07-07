@@ -1,17 +1,17 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: white;
-    margin: 50px;
+    margin: 5%;
 }
 h1{
     color: crimson;
-    font-size: 40px;
-        line-height: 50px;
+    font-size: 150%;
+    line-height: 4vh;
 }
 p{
     color: #000;
-    font-size: 20px;
-    line-height: 45px;
+    font-size: 120%;
+    line-height: 4vh;
 }
 a{
     text-decoration: none;
@@ -19,21 +19,21 @@ a{
 
 }
 .right{
-    width: 40vw;
-    height: 50vh; 
+    width: 40%;
+    height: 50%; 
     /* background-color:#FFE066 ; */
     float:right;
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px;
     background-image: linear-gradient(225deg, #ffe066,#ffb7c323);
 
 }
 .left{
-    width: 40vw;
-    height: 50vh;
+    width: 40%;
+    height: 50%;
     /* background-color: #FFB7C3; */
     float: left;
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px;
     background-image: linear-gradient(225deg,#ffb7c323,#FFE066);
     position: relative;
