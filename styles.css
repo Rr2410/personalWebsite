@@ -5,7 +5,7 @@ body{
     letter-spacing: 2px;
 }
 h1{
-    color: crimson;
+    color: rgb(236, 101, 128);
     font-size: 150%;
     line-height: 4vh;
 }
@@ -20,27 +20,7 @@ a{
     letter-spacing: 2px;
 
 }
-/* .right{
-    width: 40%;
-    height: 50%; 
-    background-color:#FFE066 ; 
-    float:right;
-    padding: 5px;
-    border-radius: 10px;
-    background-image: linear-gradient(225deg, #08ca22,#ffb7c323);
 
-}
-.left{
-    width: 40%;
-    height: 50%;
-    background-color: #FFB7C3; 
-    float: left;
-    padding: 5px;
-    border-radius: 10px;
-    background-image: linear-gradient(225deg,#ffb7c323,#FFE066);
-    position: relative;
-
-} */
 button{
 display: grid;
 grid-auto-flow: column;
@@ -51,8 +31,37 @@ padding: 1em 1.5em;
 border-radius: 9em;
 font-family: 'Montserrat', sans-serif;
 font-weight: 600;
+box-shadow: none;
+    text-decoration: none;
+    color: #CEEAF7;
+    background: transparent;
+    transform-style: preserve-3d;
+    height: auto;
+    float: none;
 }
-#button-edu{
+button span {
+    background: linear-gradient(80deg, #0b0138,rgb(236, 101, 128));
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+    line-height: 3rem; 
+    will-change: transform, filter;
+    float: none;
+    margin: 0;
+    transition: all 0.15s ease-out;
+    height: auto;
+    border-radius: 100px;
+    overflow: hidden;
+    display: block;
+    margin: 0px auto;
+    display: block;
+    transform: rotateX(0deg) rotateY(0deg) scale(1);
+    filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.3));
+    font-weight: 600;
+    perspective-origin: 0 0;
+    letter-spacing: 0;
+    
+}
+/* #button-edu{
 background: linear-gradient(225deg, #0b0138, #ffb7c323)border-box;
     
 }
@@ -63,7 +72,7 @@ background: linear-gradient(225deg, #0b0138, #ffb7c323) border-box;
 #button-exm{
 background: linear-gradient(225deg, #ffb7c323, #0b0138) border-box;
     
-}
+} */
 /* .center{
 
 } */
