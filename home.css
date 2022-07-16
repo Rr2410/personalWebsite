@@ -20,7 +20,7 @@ a{
     letter-spacing: 2px;
 }
 
-.buttons {
+.buttons{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -44,7 +44,7 @@ a{
 }
 
 .btn {
-    letter-spacing: 0.1em
+    letter-spacing: 0.1em ;
     cursor: pointer;
     font-size: 14px;
     font-weight: 400;
@@ -52,7 +52,7 @@ a{
     max-width: 160px;
     position: relative;
     text-decoration: none;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     width: 100%;
 }
 
@@ -114,15 +114,3 @@ a{
     -webkit-transform: rotate(40deg);
     transform: rotate(40deg);
 }
-
-
-
-
-
-/* #CEEAF7
-#FFE066
-#FF6700
-rgb(220,20,60)
-#FFB7C3
-
-*/
