@@ -1,19 +1,17 @@
 body{
-    font-family: 'Montserrat', sans-serif;
-    background:var(--white);
-
+    font-family: monospace;
+    background: var(--white);
 }
 :root{
-    --white: white;
-    --Pale: ##92BAB7;
-    --Black:#251d05;
+    --white: #92bab77c;;
+    --Pale: #92bab76c;
+    --Black:#12063b;
 }
 .topTitle{
     font-size: x-large;
     color:var(--Black);
     display: block;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 150px;
+    margin: 25px 15px 45px 150px;
 }
 
 .bioDiv{
@@ -30,6 +28,7 @@ body{
     display: block;
     padding: 40px;
     text-align: center;
+    
 }
 #contact{
 width: 15vw;
@@ -37,16 +36,16 @@ height: 8vh;
 border-radius: 15px;
 border-color: transparent;
 background: var(--Pale);
-font-family: 'Montserrat',sans-serif;
 font-weight: bolder;
 color:var(--Black);
 transition: all .2s ease-in-out;
-font-size: inherit;
+        font-size: 1rem;
 margin: 20px;
         box-sizing: content-box;
+            font-family: monospace;
 }
 #contact:hover{
-    font-size: large;
+    font-size: 1.2rem;
 }
 
 #linkedIn{
@@ -55,16 +54,16 @@ margin: 20px;
         border-radius: 15px;
         border-color: transparent;
         background: var(--Pale);
-        font-family: 'Montserrat', sans-serif;
         font-weight: bolder;
         color: var(--Black);
         transition: all .2s ease-in-out;
-        font-size: inherit;
+        font-size: 1rem;
         margin: 20px;
                 box-sizing: content-box;
+                    font-family: monospace;
 }
 #linkedIn:hover{
-    font-size: large;
+    font-size: 1.2rem;
 }
 
 #GitHub{
@@ -73,16 +72,16 @@ margin: 20px;
         border-radius: 15px;
         border-color: transparent;
         background: var(--Pale);
-        font-family: 'Montserrat', sans-serif;
         font-weight: bolder;
         color: var(--Black);
         transition: all .2s ease-in-out;
-        font-size:initial;
-        margin: 20px;
+        font-size: 1rem;
+                margin: 20px;
         box-sizing: content-box;
+            font-family: monospace;
 }
 #GitHub:hover{
-    font-size: large;
+    font-size: 1.2rem;
 
 }
 
