@@ -1,88 +1,103 @@
-body{
-    font-family: monospace;
-    background: var(--white);
-}
-:root{
-    --white: #92bab77c;;
-    --Pale: #92bab76c;
-    --Black:#12063b;
-}
-.topTitle{
-    font-size: x-large;
-    color:var(--Black);
-    display: block;
-    margin: 25px 15px 45px 150px;
-}
+ body {
+    background: #fe0342 !important ;
+} 
 
-.bioDiv{
-    width: 80vw;
-    height: 60vh;
-    margin:auto;
+.heart {
     display: block;
-    border-radius: 20px;
-    background:var(--Pale);
-}
-
-.socialsDiv {
     margin: auto;
+        height: 30%;
+        position: relative;
+        top: 0;
+        transform: rotate(-45deg);
+        width: 30%;
+        animation: pulse 1s ease infinite;
+        fill: rgb(248, 153, 153);
+}
+.med-heart {
     display: block;
-    padding: 40px;
-    text-align: center;
-    
+    margin: auto;
+    height: 40%;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 40%;
+    animation: pulse 1s ease infinite;
+    fill: rgb(248, 153, 153);
 }
-#contact{
-width: 15vw;
-height: 8vh;
-border-radius: 15px;
-border-color: transparent;
-background: var(--Pale);
-font-weight: bolder;
-color:var(--Black);
-transition: all .2s ease-in-out;
-        font-size: 1rem;
-margin: 20px;
-        box-sizing: content-box;
-            font-family: monospace;
+.larg-heart{
+    display: block;
+    margin: auto;
+        height: 50%;
+        position: relative;
+        top: 0;
+        transform: rotate(-45deg);
+        width: 50%;
+        animation: pulse 1s ease infinite;
+        fill: rgb(248, 153, 153);
 }
-#contact:hover{
-    font-size: 1.2rem;
+.xlarg-heart{
+    display: block;
+        margin: auto;
+        height: 60%;
+        position: relative;
+        top: 0;
+        transform: rotate(-45deg);
+        width: 60%;
+        animation: pulse 1s ease infinite;
+        fill: rgb(248, 153, 153);        
 }
-
-#linkedIn{
-    width: 15vw;
-        height: 8vh;
-        border-radius: 15px;
-        border-color: transparent;
-        background: var(--Pale);
-        font-weight: bolder;
-        color: var(--Black);
-        transition: all .2s ease-in-out;
-        font-size: 1rem;
-        margin: 20px;
-                box-sizing: content-box;
-                    font-family: monospace;
-}
-#linkedIn:hover{
-    font-size: 1.2rem;
-}
-
-#GitHub{
-    width: 15vw;
-        height: 8vh;
-        border-radius: 15px;
-        border-color: transparent;
-        background: var(--Pale);
-        font-weight: bolder;
-        color: var(--Black);
-        transition: all .2s ease-in-out;
-        font-size: 1rem;
-                margin: 20px;
-        box-sizing: content-box;
-            font-family: monospace;
-}
-#GitHub:hover{
-    font-size: 1.2rem;
-
+.xxlarg-heart{
+    display: block;
+        margin: auto;
+        height: 70%;
+        position: relative;
+        top: 0;
+        transform: rotate(-45deg);
+        width: 70%;
+        animation: pulse 1s ease infinite;
+        fill: rgb(248, 153, 153);
 }
 
 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.shade1 {
+    opacity: 0.2;
+}
+
+.shade2 {
+    opacity: 0.4;
+}
+
+.shade3 {
+    opacity: 0.6;
+}
+
+.shade4 {
+    opacity: 0.65;
+}
+
+.shade5 {
+    opacity: 1;
+}  
+ 
