@@ -3,6 +3,10 @@
     color: white !important;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
 } 
+a{
+    color:white !important;
+    text-decoration: none !important ;
+}
 
 .sm-heart {
     display: block;
@@ -13,7 +17,7 @@
     top: 0;
     transform: rotate(-45deg);
 
-    animation: pulse 1s ease infinite;
+    animation: pulse 1.5s ease infinite;
     fill: rgb(250, 177, 177);
 }
 
@@ -26,7 +30,7 @@
         top: 0;
         transform: rotate(-45deg);
         
-        animation: pulse 1s ease infinite;
+        animation: pulse 1.5s ease infinite;
         fill: rgb(250, 163, 163);
 }
 .med-heart {
@@ -37,7 +41,7 @@
     top: 0;
     transform: rotate(-45deg);
     width: 40vw;
-    animation: pulse 1s ease infinite;
+    animation: pulse 1.5s ease infinite;
     fill: rgb(248, 153, 153);
 }
 .larg-heart{
@@ -48,7 +52,7 @@
         top: 0;
         transform: rotate(-45deg);
         width: 60vw;
-        animation: pulse 1s ease infinite;
+        animation: pulse 1.5s ease infinite;
         fill: rgb(248, 153, 153);
 }
 .xlarg-heart{
@@ -59,7 +63,7 @@
         top: 0;
         transform: rotate(-45deg);
         width: 85vh;
-        animation: pulse 1s ease infinite;
+        animation: pulse 1.5s ease infinite;
         fill: rgb(248, 153, 153);        
 }
 .xxlarg-heart{
@@ -71,7 +75,7 @@
         top: 0;
         transform: rotate(-45deg);
         width: 100vw;
-        animation: pulse 1s ease infinite;
+        animation: pulse 1.5s ease infinite;
         fill: rgb(248, 153, 153);
 }
 
