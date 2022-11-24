@@ -24,8 +24,9 @@
             <div class="row">
                 <div class="col-sm mx-2">
                     <h5>Contact me</h5>
-                    <p><a href="#" target="_blank">Email</a></p>
+                    <p><a href="#" onclick="openForm()" >Email</a></p>
                 </div>
+                
                 <div class="col-sm mx-2">
                     <h5>Find me online</h5>
                     <p><a href="https://github.com/Rr2410" target="_blank">Github</a> </p>
@@ -46,6 +47,11 @@
     color: white !important;
     font-family: 'Powerpuff Girls', sans-serif !important;                                                
 } 
+button{
+    border: transparent;
+    background-color: transparent;
+    color: white !important;
+}
 a{
     color:white !important;
     text-decoration: none !important ;
@@ -154,6 +160,7 @@ a{
 .shade5 {
     opacity: 1;
 }  
+
         </style>
 
         
@@ -189,9 +196,107 @@ a{
                                 c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
     </svg></div>
 
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 10%;
+            top: 20%;
+            left: 15px;
+            z-index: 9;
+
+        }
+    
+        .form-container {
+            width: 60%;
+            height: 80%;
+            padding: 2%;
+            background-color: rgb(253, 226, 226);
+            color: #f82157c2;
+            
+        }
+        
+    
+        .form-container input[type=text],
+        .form-container input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f3b8ca;
+        }
+    
+        .form-container input[type=text]:focus,
+        .form-container input[type=password]:focus {
+            background-color: rgb(248, 170, 231);
+            outline: none;
+        }
+        @media only screen and (max-width: 560px) {
+
+            .form-container {
+            width: 80%;
+            height: 75%;
+            padding: 2%;
+            background-color: rgb(253, 226, 226);
+            color: #f82157c2;
+            transform: translateY(-15%);
+        }
+}
+    
+        .form-container .btn {
+            background-color: #f76f98;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+    
+        .form-container .cancel {
+            background-color: rgb(248, 48, 48);
+        }
+    
+        .form-container .btn:hover,
+        .open-button:hover {
+            opacity: 1;
+        }
+    </style>
+        <div class="form-popup" id="myForm">
+            <form action="https://formsubmit.co/123rr456aa@gmail.com" method="POST" class="form-container">
+                <h1>send me an email !</h1>
+    
+                <label for="email"><b>Enter yout Email:</b></label>
+                <input type="text" placeholder="your Email here" name="email" required>
+    
+                <label for="msg"><b>Enter your message:</b></label>
+                <input type="text" placeholder="what would you like to say?" name="msg" required>
+    
+                <button type="submit" class="btn">send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">never mind</button>
+            </form>
+        </div>
+    
+        <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }
+        </script>
 
 
 
+<form action="https://formsubmit.co/your@email.com" method="POST">
+    
+</form>
 <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
     </body>
 </html>
