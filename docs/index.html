@@ -239,11 +239,11 @@ a{
 
             .form-container {
             width: 80%;
-            height: 75%;
+            height: 80%;
             padding: 2%;
             background-color: rgb(253, 226, 226);
             color: #f82157c2;
-            transform: translateY(-15%);
+            transform: translateY(-20%);
         }
 }
     
@@ -268,17 +268,17 @@ a{
         }
     </style>
         <div class="form-popup" id="myForm">
-            <form action="https://formsubmit.co/123rr456aa@gmail.com" method="POST" class="form-container">
+            <form method="POST" class="form-container" onsubmit="sendEmail(); reset(); return false;">
                 <h1>send me an email !</h1>
     
                 <label for="email"><b>Enter yout Email:</b></label>
-                <input type="text" placeholder="your Email here" name="email" required>
+                <input type="text" placeholder="your Email here" name="email" id="EEmail" required>
     
                 <label for="msg"><b>Enter your message:</b></label>
                 <input type="text" placeholder="what would you like to say?" name="msg" required>
     
-                <button type="submit" class="btn">send</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">never mind</button>
+                <button type="submit" class="btn" onclick="sendEmail()">send</button>
+                <button type="button" class="btn cancel">never mind</button>
             </form>
         </div>
     
@@ -290,6 +290,20 @@ a{
             function closeForm() {
                 document.getElementById("myForm").style.display = "none";
             }
+
+            function sendEmail(){
+                Email.send({
+                    Host: "smtp.gmail.com",
+                    Username: "123rr456aa@gamil.com",
+                    Password: "@R123456r",
+                    To: '123rr456aa@gmail.com',
+                    From: document.getElementById("EEmail").value,
+                    Subject: "contact enquiry",
+                    Body: "And this is the body"
+                }).then(
+                    message => alert(message)
+                );
+            }
         </script>
 
 
@@ -298,5 +312,6 @@ a{
     
 </form>
 <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
     </body>
 </html>
